@@ -1,0 +1,94 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: url(https://raw.githubusercontent.com/AslanovOrkhan/CSS-CONTACT-US/master/wp9166739.webp) no-repeat center/cover;
+  }
+  
+  .container form {
+    width: 670px;
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    border-radius: 15px;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    flex-wrap: wrap;
+  }
+  .container form h1 {
+    color: #fff;
+    font-weight: 700;
+    line-height: 2;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+  }
+  .container form input {
+    width: 300px;
+    height: 50px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 20px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+  }
+  .container form input::placeholder {
+    color: #fff;
+  }
+  .container form #lastName,
+  .container form #mobile {
+    margin-left: 20px;
+  }
+  .container form h4 {
+    color: #fff;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+  }
+  .container form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid #fff;
+    color: #fff;
+    font-weight: 200;
+    font-size: 20px;
+    padding: 10px;
+    outline: none;
+    min-height: 90px;
+    max-height: 90px;
+    min-width: 620px;
+    max-width: 620px;
+  }
+  .container form h4 {
+    font-size: 20px;
+  }
+  .container form #button {
+    border: none;
+    background: #fff;
+    border-radius: 5px;
+    margin-top: 20px;
+    font-weight: 600;
+    font-size: 24px;
+    color: black;
+    width: 200px;
+    height: 60px;
+    padding: 0;
+    margin-bottom: 30px;
+    transition: 0.3s;
+    cursor: pointer;
+  }
+  
+  .container form #button:hover{
+      background:  rgba(192, 131, 17, 0.918);
+      color: #fff;
+  }

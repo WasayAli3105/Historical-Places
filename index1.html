@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="" class="navbar-brand">
+                <img src="data:image/jpeg;base64,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" alt="" style="height: 100px;" >
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a href="#" class="nav-link active">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">GALLERY</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="#" class="nav-link">PRODUCT</a>
+                        </li>
+                
+                    </ul>
+                </div>
+                    
+        </div>
+    
+    </nav>
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+    
+    
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://images.alphacoders.com/112/1129810.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://th.bing.com/th/id/R.656111494383c7d3f8be559fe931d32e?rik=B8tka7Zp16J9ZQ&pid=ImgRaw&r=0" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://images.hdqwalls.com/download/lamborghini-huracan-lb-performance-4k-0e-1920x1080.jpg" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container">
+        <div class="row">
+        <h1 class="text-center p-5"><i>ABOUT US</i></h1>
+        <div class="col-lg-6 col-md-6 col-sm-12">
+            <img src="https://media.istockphoto.com/id/1400739452/vector/about-us-web-header-design-icon-interconnected-symbol-of-company-profile-corporate.jpg?s=612x612&w=0&k=20&c=-zgp-xnEqh8zBEjNajlPZmDF5PXuqlXVUu7RjBf_UGU=" alt="">
+                </div>
+            
+                <div class="col-lg-6 col-md-6 col-sm-12">
+                    <p>
+                    <i>Cars are fascinating machines that have transformed the way we travel. They have four wheels and an engine, which is like the heart of the car. It powers the vehicle, helping it move from one place to another. Cars come in different shapes, sizes, and colors. Some are small and compact, perfect for solo trips or small families, while others are big and spacious, fitting in many people or large amounts of luggage. Cars also differ in the power they provide. Some cars are built for speed, zooming down highways with ease, while others are designed for tough terrains, climbing steep hills without a struggle. There are even cars that run on electricity instead of petrol or diesel, helping protect the environment by reducing air pollution. Cars have various features for safety and comfort too, such as seat belts, airbags, air conditioning, and music systems.
+                    </p></i>
+                </div>
+    </div>
+   
+</div>
+
+<div class="container">
+    <div class="row">
+        <h1 class="text-center p-5"><i>OUR PRODUCTS</i></h1>
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://cache4.pakwheels.com/system/car_generation_pictures/7335/original/Fortuner_-_PNG.png?1677568997" alt="" style="width: 100%; height: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">Toyota Fortuner</h5>
+                    <h6 class="card-subtitle mb-2 text-muted "><a class="dark-grey-text" href="#!">PKR 1.45 - 1.99 crore</a></h6>
+                    <p class="card-text">The Toyota Fortuner 2024 is a midsize SUV manufactured by Toyota based on the Hilux pickup truck platform...</p>
+                    <button class="btn btn-outline-success w-50">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+      
+    
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://cache1.pakwheels.com/system/car_generation_pictures/6008/original/Land_Cruiser_300_-_PNG.png?1635484577" alt="" style="width: 100%; height: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">Toyota Land Cruiser</h5>
+                    <h6 class="card-subtitle mb-2 text-muted "><a class="dark-grey-text" href="#!">PKR 12.0 crore</a></h6>
+                    <p class="card-text">The all-new Toyota Land Cruiser 300 2024 has been launched in Pakistan, boasting significant upgrades in both exterior...</p>
+                    <button class="btn btn-outline-success w-50">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+
+
+        <div class="col-lg-4 col-md-4 col-sm-4">
+            <div class="card" style="width: 18rem;">
+                <img src="https://cache2.pakwheels.com/system/car_generation_pictures/7658/original/MG5.png?1705665712" alt="" style="width: 100%; height: 300px;">
+                <div class="card-body">
+                    <h5 class="card-title">MG 5 EV</h5>
+                    <h6 class="card-subtitle mb-2 text-muted "><a class="dark-grey-text" href="#!">PKR 1.35 crore</a></h6>
+                    <p class="card-text">The MG5 is a smart and sensible family estate car that offers decent practicality and the low running costs that come with all-electric...</p>
+                    <button class="btn btn-outline-success w-50">BUY NOW</button>
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+</div>
+
+<div class="row">
+    <!-- Footer -->
+    <footer class="page-footer font-small blue-grey lighten-5">
+    
+      <div style="background-color: #2dbeab;">
+        <div class="container">
+    
+          <!-- Grid row-->
+          <div class="row py-4 d-flex align-items-center">
+    
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+              <h6 class="mb-0"><b>Get connected with us on social networks!</b></h6>
+            </div>
+            <!-- Grid column -->
+    
+            <!-- Grid column -->
+            <div class="col-md-6 col-lg-7 text-center text-md-right">
+    
+              <!-- Facebook -->
+              <a class="fb-ic">
+                <i class="fab fa-facebook-f white-text mr-4"> </i>
+              </a>
+              <!-- Twitter -->
+              <a class="tw-ic">
+                <i class="fab fa-twitter white-text mr-4"> </i>
+              </a>
+              <!-- Google +-->
+              <a class="gplus-ic">
+                <i class="fab fa-google-plus-g white-text mr-4"> </i>
+              </a>
+              <!--Linkedin -->
+              <a class="li-ic">
+                <i class="fab fa-linkedin-in white-text mr-4"> </i>
+              </a>
+              <!--Instagram-->
+              <a class="ins-ic">
+                <i class="fab fa-instagram white-text"> </i>
+              </a>
+    
+            </div>
+            <!-- Grid column -->
+    
+          </div>
+          <!-- Grid row-->
+    
+        </div>
+      </div>
+    
+      <!-- Footer Links -->
+      <div class="container text-center text-md-left mt-5">
+    
+        <!-- Grid row -->
+        <div class="row mt-3 dark-grey-text">
+    
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+    
+            <!-- Content -->
+            <h6 class="text-uppercase font-weight-bold"><b>Cars By Make</b></h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a class="dark-grey-text" href="#!">Toyota Cars for Sale</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="#!">Suzuki Cars for Sale</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="#!">Honda Cars for Sale</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="#!">BMW Cars for Sale</a>
+              </p>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+    
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold"><b>Cars By Category</b></h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a class="dark-grey-text" href="#!">Jeep</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Japanese Cars</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Imported Cars</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Automatic Cars</a>
+            </p>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+    
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold"><b>Cars By Body Type</b></h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+              <a class="dark-grey-text" href="#!">Sedan</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Hatchback</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">SUV</a>
+            </p>
+            <p>
+              <a class="dark-grey-text" href="#!">Compact Sedan</a>
+            </p>
+    
+          </div>
+          <!-- Grid column -->
+    
+          <!-- Grid column -->
+          <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+    
+            <!-- Links -->
+            <h6 class="text-uppercase font-weight-bold"><b>PakWheels.com</b></h6>
+            <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+            <p>
+                <a class="dark-grey-text" href="#!">About PakWheels.com</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="#!">Our Products</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="#!">Advertise With Us</a>
+              </p>
+              <p>
+                <a class="dark-grey-text" href="#!">Refunds & Returns</a>
+              </p>
+    
+          </div>
+          <!-- Grid column -->
+    
+        </div>
+        <!-- Grid row -->
+    
+      </div>
+      <!-- Footer Links -->
+    
+      <!-- Copyright -->
+      <div class="footer-copyright text-center text-black-50 py-3">Copyright © 2003 - 2024 PakWheels (Pvt) Ltd. - All Rights Reserved.
+        Terms of Service |  Privacy Policy
+        <a class="dark-grey-text" href="https://mdbootstrap.com/">Reproduction of material from any PakWheels.</a>
+      </div>
+      <!-- Copyright -->
+    
+    </footer>
+    <!-- Footer -->
+</div>
+    
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

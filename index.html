@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Historical Places</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+</head>
+<style>
+  .navbar .navbar-nav .nav-item a{
+          padding: 15px;
+      }
+      
+      .navbar .navbar-nav .nav-but {
+          padding: 10px;
+      }
+  h1{
+    color: #ffcc74;
+  }
+  h2{
+    color: #000000;
+  }
+  .page-footer{
+    background-color: rgb(0, 0, 0);
+  }
+  .text-uppercase{
+    color: white;
+  }
+  .teal{
+    color: white;
+  }
+  .assets{
+    color: white;
+    cursor: pointer;
+  }
+  .h7{
+    color: white;
+  }
+
+  .da, .ea, .ga, .ha{
+     width: 40px;
+    height: 40px;
+    border: 1px solid black;
+    background-color:rgba(72, 66, 66, 0.987);
+    color: white;
+    font-size: 13px;
+    border-radius: 50%;
+    text-align: center;
+    padding-top: 15px; 
+    margin: 30px 8px;
+    transition: all ease-in-out .5s;
+}
+
+.da:hover{
+    transform: rotate(360deg);
+    color: rgb(238, 238, 246);
+    background-color: #1877F2;
+}
+
+.ga:hover{
+    transform: rotate(360deg);
+    color: white;
+    background: linear-gradient(to bottom,#feda75, #fa7e1e, #d62976, #962fbf, #4f5bd5);
+}
+
+.ea:hover{
+    transform: rotate(360deg);
+    color: white;
+    background-color:  #1DA1F2;
+
+}
+
+.ha:hover{
+    transform: rotate(360deg);
+    color: white;
+    background-color: #0077b5;
+}
+  
+</style>
+<body>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark fixed-top">
+        <div class="container">
+            <a href="" class="navbar-brand">
+                <img src="https://cdn.leonardo.ai/users/06ccaa0c-7126-4dff-ba89-05ef0912d42f/generations/b5d2e29d-87e1-4389-956e-8060a65ffffe/Default_historical_places_logo_1.jpg" alt="" style="height: 100px;
+                border-radius: 20px;"  >
+                </a>
+                <h1><i>HISTORICAL PLACES</i></h1>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
+                    <ul class="navbar-nav text-center">
+                        <li class="nav-item">
+                            <a href="index.html" class="nav-link active">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="about.html" class="nav-link">ABOUT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="Contact.html" class="nav-link">CONTACT</a>
+                        </li>
+                        <li class="nav-item">
+                            <a href="gallery.html" class="nav-link">GALLERY</a>
+                        </li>
+                    </ul>
+                </div>
+                    
+        </div>
+
+        <div class="dropdown">
+          <a class="btn btn-secondary dropdown-toggle" href="#" role="button" id="dropdownMenuLink" data-bs-toggle="dropdown" aria-expanded="false">
+          Dropdown
+          </a>
+        
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenuLink">
+            <li><a class="dropdown-item" href="east.html">East</a></li>
+            <li><a class="dropdown-item" href="west.html">West</a></li>
+            <li><a class="dropdown-item" href="north.html">North</a></li>
+            <li><a class="dropdown-item" href="south.html">South</a></li>
+          </ul>
+        </div>
+    </nav>
+    
+    <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/7/78/Monument_Valley%2C_Utah%2C_USA_%2823611451292%29.jpg/1024px-Monument_Valley%2C_Utah%2C_USA_%2823611451292%29.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="file:///C:/Users/HP/Desktop/bootstrap/PROJECT/assets/images/image-2.jpg" class="d-block w-100" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src="https://hmhps.ca/images/locations/halifax-citadel/halifax-citadel-1.jpg" class="d-block w-100" alt="...">
+          </div>
+          
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+      <div class="container">
+        <div class="row">
+            <h2 class="text-center p-5">FAMOUS HISTORICAL PLACES</h2>
+    
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://th.bing.com/th/id/OIP.DlnJYpTf2KeR6bhdQ9OBqQHaE7?w=556&h=370&rs=1&pid=ImgDetMain" alt="" style="width: 100%; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">TAJ MAHAL</h5>
+                        <p class="card-text">According to Al Jazeera, the stunning white marble mausoleum was built in the 17th century by Mughal King Shah Jahan in memory of his wife, Mumtaz Mahal, in Agra, about 200km from the Indian capital, New Delhi...</p>
+                        <button class="btn btn-outline-dark w-50">Read More</button>
+                    </div>
+                </div>
+            </div>
+          
+        
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjKz7TCKFId2UjFSLfHsqyDLUxsraAhO3tF6HKOoZtyJ1h4XfVYWu_PJ_jCEsaNL6IJYeNUHuhVKox_Om_hDymQbps2DyUqQ-baZIyAbn-nX3GSyMsL9QH6jLMYmIibgOQk6jVHsmZKrI5l/s400/Parthenon-Acropolis.jpg" alt="" style="width: 100%; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">PARTHENON-ACROPOLIS</h5>
+                        <p class="card-text">The Parthenon. It is the most important and characteristic monument of the ancient Greek civilization and still remains its international symbol Parthenos (the Virgin) the patron goddess of Athens...</p>
+                        <button class="btn btn-outline-dark w-50">Read More</button>
+                    </div>
+                </div>
+            </div>
+    
+    
+            <div class="col-lg-4 col-md-4 col-sm-4">
+                <div class="card" style="width: 18rem;">
+                    <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiwXUlxM6q2n6U8Q0KmkmbXFQ85bypnXD_ZCr_WiLHTxDuP2OaO4qAq7c82sxo1TNhK6S0HZRUusG2vHItkWhQvmhXjS8dqrC5GTcAlTMiQDp1BlF1zNhpi0v_AWvB6jZMqA_x1o_ErK350/s400/Historical-places-of-germany-Imperial-Baths-of-Trier.jpg" alt="" style="width: 100%; height: 200px;">
+                    <div class="card-body">
+                        <h5 class="card-title">IMPERIAL-BATHS-OF-TRIER</h5>
+                        <p class="card-text">Going to the baths was an important part of Roman life: Over 1600 years ago, the Romans built one of the grandest and most impressive baths in the world can visit this gigantic bathing descend into the subterranean...</p>
+                        <button class="btn btn-outline-dark w-50">Read More</button>
+                    </div>
+                </div>
+            </div>
+    
+    
+        </div>
+    </div>
+
+    <div class="container">
+      <div class="row">
+        <h1 class="text-center p-5"></h1>
+          <div class="col-lg-4 col-md-4 col-sm-4">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEg54VIdUUyrjuCcuaG6AYbmOAc-UdSIPR95nPdjD-vSPSe9251zyaN3chuRemmXNLLv9OmOBYHyPCUBaOY7as29Su41AT3p0VOCJkpNVvrUxd4fJI2jETX6gScdJYRjiFuvA832-dMafL8v/s1600/petra.jpg" alt="" style="width: 100%; height: 200px;">
+                  <div class="card-body">
+                      <h5 class="card-title">PETRA</h5>
+                      <p class="card-text">Petra, the fabled "rose red city, half as old as time", is a well known ancient Nabataean city in the south of Jordan  Due to its breathtaking grandeur and fabulous ruins, Petra was recognized as a World Heritage Site by UNESCO in 1985...</p>
+                      <button class="btn btn-outline-dark w-50">Read More</button>
+                  </div>
+              </div>
+          </div>
+        
+      
+          <div class="col-lg-4 col-md-4 col-sm-4">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEi5n_yshU9BFAHHIMZ8u-54CYllw14QpjzMH6tbXAFfXlLzaWnBMFiIMAS6cVRizKQMdZWWk5uGcNyFjoRHmL97veI8oGVnQ0qPpcvltKXB_P-vOLEPli_b4jUWQEhvhEsV1CK2ximb97OR/s400/Athens-Greece.jpg" alt="" style="width: 100%; height: 200px;">
+                  <div class="card-body">
+                      <h5 class="card-title">ATHENS-GREECE</h5>
+                      <p class="card-text">ATHENS is the Capital and Largest city of GREECE..Athens is a Greek Word ...Athens dominates the Attica region and in 0ne of Oldest  cities with its Recorded history over 3,400 years It has a large financial sector and its Port PIRAEUS is both the...</p>
+                      <button class="btn btn-outline-dark w-50">Read More</button>
+                  </div>
+              </div>
+          </div>
+  
+  
+          <div class="col-lg-4 col-md-4 col-sm-4">
+              <div class="card" style="width: 18rem;">
+                  <img src="https://www.intrepidtravel.com/adventures/wp-content/uploads/2018/01/shutterstock_659528401-e1515449108463.jpg" alt="" style="width: 100%; height: 200px;">
+                  <div class="card-body">
+                      <h5 class="card-title"> LONGMEN GROTTOES</h5>
+                      <p class="card-text">Like a treasure chest carved into cliffs, the Longmen Grottoes protect one of the most remarkable collections of Buddhist art in the world, carved over hundreds of years in the Northern Wei and Tang dynasties...</p>
+                      <button class="btn btn-outline-dark w-50">Read More</button>
+                  </div>
+              </div>
+          </div>
+  
+  
+      </div>
+  </div>
+
+  <div class="row">
+
+     <!-- Footer -->
+<footer class="container-fluid-lg font-small  bg-dark">
+    
+  <div style="background-color: #000000;">
+    <div class="container-fluid bg-light ">
+
+      <!-- Grid row-->
+      <div class="row py-4 d-flex align-items-center">
+
+        <!-- Grid column -->
+        <div class="col-md-6 col-lg-5 text-center text-md-left mb-4 mb-md-0">
+          <h6 class="mb-0 text-dark ">Get connected with us on social networks!</h6>
+        </div>
+        <!-- Grid column -->
+
+        
+        <!-- Grid column -->
+
+      </div>
+      <!-- Grid row-->
+
+    </div>
+  </div>
+
+  <!-- Footer Links -->
+  <div class="container text-center text-md-left mt-5">
+
+    <!-- Grid row -->
+    <div class="row mt-3 dark-grey-text">
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+
+        <!-- Content -->
+        <h6 class="text-uppercase font-weight-bold text-light  ">Historical Places</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p class="text-light ">Historical Places is to benefit readers by presenting information on all branches of knowledge. Hosted by the Wikimedia Foundation, it consists of freely editable content, whose articles also have numerous links to guide readers towards more information.</p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold text-light ">Products</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text" href="east.html" style="text-decoration: none;">East</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="west.html" style="text-decoration: none;">West</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="north.html" style="text-decoration: none">North</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" href="south.html" style="text-decoration: none" >South</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold text-light ">Useful links</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto" style="width: 60px;">
+        <p>
+          <a class="dark-grey-text"  style="text-decoration: none" href="index.html">Home</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" style="text-decoration: none" href="about.html">About</a>
+        </p>
+        <p>
+          <a class="dark-grey-text" style="text-decoration: none" href="Contact.html">Contact</a>
+        </p>
+        <p>
+          <a class="dark-grey-text"  style="text-decoration: none" href="gallery.html">Gallery</a>
+        </p>
+
+      </div>
+      <!-- Grid column -->
+
+      <!-- Grid column -->
+      <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4 text-light">
+
+        <!-- Links -->
+        <h6 class="text-uppercase font-weight-bold text-light ">Contact</h6>
+        <hr class="teal accent-3 mb-4 mt-0 d-inline-block mx-auto text-light" style="width: 60px;">
+        <p>
+          <i class="fas fa-home mr-3 text-light"></i> Karachi,Pakistan.</p>
+        <p>
+          <i class="fas fa-envelope mr-3"></i class="text-light"> historicalplaces@gmail.com</p>
+        <p>
+          <i class="fas fa-phone mr-3"></i> 03110214934</p>
+        <p>
+          <i class="fas fa-print mr-3"></i> 03272187975</p>
+
+      </div>
+      <!-- Grid column -->
+
+    </div>
+    <!-- Grid row -->
+
+  </div>
+  <!-- Footer Links -->
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center text-white-50 py-3">© 2024 Copyright:
+    <a class="dark-grey-text" style="text-decoration: none" href="https://youtube.com/"> HistoricalPlaces.Com</a>
+  </div>
+  <!-- Copyright -->
+
+</footer>
+
+<!-- Footer -->
+  </div>
+
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    </body>
+    </html>
